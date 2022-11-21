@@ -101,7 +101,7 @@ class TableMakerField extends Field
 
         return $value;
     }
-    
+
     public function serializeValue(mixed $value, ElementInterface $element = null): mixed
     {
         if (!empty($value['rows']) && is_array($value['rows'])) {
@@ -156,7 +156,7 @@ class TableMakerField extends Field
                     'heading' => $val['heading'],
                     'align' => $val['align'],
                     'width' => $val['width'],
-                    'type' => 'singleline',
+                    'type' => 'multiline',
                 ];
             }
         } else {
@@ -165,7 +165,7 @@ class TableMakerField extends Field
                     'heading' => '',
                     'align' => '',
                     'width' => '',
-                    'type' => 'singleline',
+                    'type' => 'multiline',
                 ],
             ];
         }
